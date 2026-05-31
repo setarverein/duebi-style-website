@@ -1,6 +1,10 @@
 <a href="{{ product.url | relative_url }}" class="product-card" aria-label="{{ product.title }}">
   <div class="product-image">
+    {% if product.image %}
+    <img src="{{ product.image | relative_url }}" alt="{{ product.title }}" loading="lazy">
+    {% else %}
     <span class="product-placeholder">&#x1F45F;</span>
+    {% endif %}
     {% if product.discount_percent %}
     <span class="discount-badge">
       <span class="badge-slash">%</span>{{ product.discount_percent }}%

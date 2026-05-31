@@ -7,7 +7,11 @@ layout: default
     <div class="product-hero">
       <div class="product-gallery">
         <div class="product-image-main">
+          {% if product.image %}
+          <img src="{{ product.image | relative_url }}" alt="{{ product.title }}">
+          {% else %}
           <span>&#x1F45F;</span>
+          {% endif %}
         </div>
       </div>
       <div class="product-details">
