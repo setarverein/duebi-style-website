@@ -18,6 +18,7 @@ Alle Produkte sind als einfache Textdateien im Ordner `_products/` hinterlegt. P
 
    ```yaml
    ---
+   layout: product
    title: "Nike Dunk Low"
    price: 79.90
    discount_percent: 30
