@@ -1,11 +1,11 @@
 ---
 layout: product
 title: "Dübi Style Damen-Outfit: Teddy-Bär T-Shirt & High-Waist Jeans"
-price: 119.00
+price: 49.00
 discount_percent: 70
 category: "Women's Fashion"
 featured: true
-image: /assets/img/products/image_9733a3.jpeg
+image: /assets/img/products/image_9733a3.PNG
 ---
 
-Verspielt und modisch zugleich: Dieses Dübi Style New Arrival Set kombiniert ein weißes T-Shirt mit einem funkelnden Pailletten-Teddybären auf der Vorderseite und eine trendige, dunkelblaue High-Waist Jeans inklusive Bindegürtel. Ein bequemer und stylischer Everyday-Look!
+Verspielt und modisch zugleich: Dieses Dübi Style New Arrival Set kombiniert ein weißes T-Shirt mit einem funkelnden Pailletten-Teddybären auf der Vorderseite (CHF 20) und eine trendige, dunkelblaue High-Waist Jeans inklusive Bindegürtel (CHF 29, nur bis Ende Juni). Ein bequemer und stylischer Everyday-Look – komplett zum Preis von CHF 49!
