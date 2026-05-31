@@ -107,9 +107,32 @@ Während der Server läuft, werden Änderungen an Dateien automatisch erkannt �
 
 ## Änderungen veröffentlichen
 
-Die Website wird auf **https://duebi-style.ch** gehostet. Neue Produkte und Änderungen werden durch einen Build-Prozess veröffentlicht.
+Die Website wird auf **https://duebi-style.ch** gehostet (GitHub Pages). So veröffentlichst du Änderungen:
 
-Sprich mit deinem Entwickler oder Administrator, um zu erfahren, wie der Build genau gestartet wird (z. B. über Git Push, Netlify, GitHub Pages oder einen manuellen Befehl).
+1. **Jekyll Build ausführen** – Erzeugt die fertige Website im Ordner `_site/`:
+   ```
+   bundle exec jekyll build
+   ```
+
+2. **Inhalt von `_site/` kopieren** – Öffne den Ordner `_site/` im Datei-Explorer und kopiere **alle** darin enthaltenen Dateien und Ordner (`Strg + A`, dann `Strg + C`).
+
+3. **Branch wechseln** – Wechsle in Git auf den `gh-pages`-Branch:
+   ```
+   git checkout gh-pages
+   ```
+
+4. **Dateien ersetzen** – Füge die kopierten Dateien im Wurzelverzeichnis des Projekts ein und **ersetze** alle vorhandenen Dateien.
+
+5. **Hochladen (Push)** – Committe und pushe die Änderungen:
+   ```
+   git add -A
+   git commit -m "Website aktualisiert"
+   git push
+   ```
+
+Nach dem Push ist die Website nach wenigen Minuten unter **https://duebi-style.ch** live.
+
+> **Wichtig:** Alle inhaltlichen Änderungen (Produkte, Texte, Bilder) immer **zuerst auf dem `main`-Branch** vornehmen. Der `gh-pages`-Branch enthält nur die fertig gebaute Website und wird nie direkt bearbeitet.
 
 ---
 
