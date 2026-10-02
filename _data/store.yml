@@ -1,10 +1,15 @@
 name: Dübi Style Outlet
 tagline: Premium Deals. Unbeatable Prices.
+legal:
+  company_name: "Dübi Style Outlet Fereydouni"
+  legal_form: "Einzelunternehmen"
+  owner: "Mohsen Fereydouni"
+  register_number: "CH-020.1.106.337-3"
 address:
   line1: Usterstrasse 3
   city: Dübendorf
   zip: "8600"
-  country: Switzerland
+  country: Schweiz
   mapbox_coords:
     lat: 47.39728
     lng: 8.61890
@@ -18,6 +23,7 @@ hours:
     time: Geschlossen
 
 phone: "+41 43 511 40 02"
+phone_mobile: "+41 76 376 40 02"
 email: info@duebi-style.ch
 
 social:

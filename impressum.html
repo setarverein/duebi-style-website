@@ -1,0 +1,39 @@
+---
+layout: default
+title: Impressum
+permalink: /impressum/
+---
+
+<div class="legal-page">
+  <div class="container">
+    <h1>Impressum</h1>
+    <p>Angaben gemäss schweizerischem Recht.</p>
+
+    <h2>Unternehmen</h2>
+    <p>
+      <strong>{{ site.data.store.legal.company_name }}</strong><br>
+      Rechtsform: {{ site.data.store.legal.legal_form }}<br>
+      Inhaber: {{ site.data.store.legal.owner }}
+    </p>
+
+    <h2>Adresse</h2>
+    <p>
+      {{ site.data.store.address.line1 }}<br>
+      {{ site.data.store.address.zip }} {{ site.data.store.address.city }}<br>
+      {{ site.data.store.address.country }}
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Telefon: <a href="tel:{{ site.data.store.phone | remove: ' ' }}">{{ site.data.store.phone }}</a><br>
+      Mobile: <a href="tel:{{ site.data.store.phone_mobile | remove: ' ' }}">{{ site.data.store.phone_mobile }}</a><br>
+      E-Mail: <a href="mailto:{{ site.data.store.email }}">{{ site.data.store.email }}</a>
+    </p>
+
+    <h2>Handelsregister</h2>
+    <p>Handelsregister-Nr.: {{ site.data.store.legal.register_number }}</p>
+
+    <h2>Verantwortlich für den Inhalt</h2>
+    <p>{{ site.data.store.legal.owner }}, Adresse wie oben.</p>
+  </div>
+</div>

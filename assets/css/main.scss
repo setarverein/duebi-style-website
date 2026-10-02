@@ -532,3 +532,28 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 }
 
 @media (max-width: $bp-md) { .product-page .product-hero { grid-template-columns: 1fr; } }
+
+// =============== LEGAL PAGES ===============
+.legal-page {
+  padding: calc(#{$header-height} + #{$spacing-md}) 0 $spacing-xl;
+  .container { max-width: 800px; }
+  h1 { color: $teal; margin-bottom: $spacing-sm; }
+  h2 { color: $white; font-size: 1.25rem; margin: $spacing-md 0 $spacing-xs; }
+  p { color: $text-muted; margin-bottom: $spacing-sm; }
+  ul { color: $text-muted; padding-left: 1.4rem; margin-bottom: $spacing-sm; li { margin-bottom: 0.25rem; } }
+  strong { color: $white; }
+  a { color: $teal; &:hover { color: $pink; } }
+}
+
+// =============== FOOTER LEGAL ===============
+.site-footer {
+  .footer-legal { margin-bottom: $spacing-sm; }
+  .footer-company { margin-bottom: $spacing-xs; line-height: 1.8; strong { color: $white; } }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    justify-content: center;
+    a { color: $teal; font-size: 0.85rem; font-weight: 600; &:hover { color: $pink; } }
+  }
+}

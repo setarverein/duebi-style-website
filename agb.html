@@ -1,0 +1,65 @@
+---
+layout: default
+title: AGB
+permalink: /agb/
+---
+
+<!--
+  HINWEIS ZUR PFLEGE (nicht sichtbar für Besucher):
+  Vor dem Versand an Stripe/TWINT bitte mit dem Inhaber bestätigen:
+  Lieferzeit, Versandkosten, Umtausch-/Rückgabefrist sowie Gerichtsstand.
+  Angepasst werden diese Angaben in den Abschnitten 3, 5 und 6.
+-->
+<div class="legal-page">
+  <div class="container">
+    <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+
+    <h2>1. Geltungsbereich</h2>
+    <p>
+      Diese Allgemeinen Geschäftsbedingungen gelten für alle Bestellungen bei
+      <strong>{{ site.data.store.legal.company_name }}</strong>
+      ({{ site.data.store.legal.legal_form }}, Inhaber {{ site.data.store.legal.owner }}).
+    </p>
+
+    <h2>2. Preise und Währung</h2>
+    <p>
+      Alle auf der Website und im Bestellprozess angezeigten Preise verstehen sich in
+      <strong>Schweizer Franken (CHF)</strong> und beinhalten die gesetzliche Mehrwertsteuer.
+      Es gibt keine versteckten Zusatzkosten.
+    </p>
+
+    <h2>3. Lieferung und Versand</h2>
+    <p>
+      Lieferungen sind innerhalb der <strong>Schweiz</strong> möglich. Die Lieferzeit und die
+      Versandkosten werden vor Abschluss der Bestellung im Checkout angezeigt.
+    </p>
+
+    <h2>4. Zahlung</h2>
+    <p>
+      Die Zahlungsabwicklung erfolgt über unseren Zahlungsdienstleister Stripe. Die verfügbaren
+      Zahlungsmittel werden im Checkout angezeigt. TWINT wird nach erfolgter Freischaltung
+      angeboten. Der Kaufpreis ist mit Abschluss der Bestellung fällig.
+    </p>
+
+    <h2>5. Umtausch und Rückgabe</h2>
+    <p>
+      Bitte prüfen Sie Ihre Bestellung nach Erhalt. Umtausch oder Rückgabe richten sich nach den
+      gesetzlichen Bestimmungen und unseren Rückgabebedingungen. Kontaktieren Sie uns dazu vorab
+      per E-Mail an <a href="mailto:{{ site.data.store.email }}">{{ site.data.store.email }}</a>.
+    </p>
+
+    <h2>6. Anwendbares Recht und Gerichtsstand</h2>
+    <p>
+      Es gilt schweizerisches Recht. Gerichtsstand ist Dübendorf, Schweiz, soweit gesetzlich
+      zulässig.
+    </p>
+
+    <h2>7. Kontakt</h2>
+    <p>
+      {{ site.data.store.legal.company_name }}<br>
+      {{ site.data.store.address.line1 }}, {{ site.data.store.address.zip }} {{ site.data.store.address.city }}, {{ site.data.store.address.country }}<br>
+      E-Mail: <a href="mailto:{{ site.data.store.email }}">{{ site.data.store.email }}</a> ·
+      Telefon: <a href="tel:{{ site.data.store.phone | remove: ' ' }}">{{ site.data.store.phone }}</a>
+    </p>
+  </div>
+</div>

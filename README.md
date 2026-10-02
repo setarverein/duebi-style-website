@@ -134,6 +134,36 @@ Nach dem Push ist die Website nach wenigen Minuten unter **https://duebi-style.c
 
 > **Wichtig:** Alle inhaltlichen Änderungen (Produkte, Texte, Bilder) immer **zuerst auf dem `main`-Branch** vornehmen. Der `gh-pages`-Branch enthält nur die fertig gebaute Website und wird nie direkt bearbeitet.
 
+### Automatisch veröffentlichen (empfohlen)
+
+Die Schritte oben müssen nicht von Hand gemacht werden. Im Projekt liegen dafür zwei Skripte:
+
+**Windows:** Doppelklick auf `publish.cmd` – oder im Terminal:
+
+```
+.\publish.ps1
+```
+
+Das Skript erledigt alles automatisch:
+
+1. Änderungen auf `main` committen und hochladen
+2. `bundle exec jekyll build` ausführen
+3. Den Inhalt von `_site/` auf den `gh-pages`-Branch veröffentlichen
+
+Eigene Commit-Nachricht angeben:
+
+```
+.\publish.ps1 -Message "Neue Sommerdeals"
+```
+
+Nur lokal bauen und committen, ohne hochzuladen (zum Testen):
+
+```
+.\publish.ps1 -NoPush
+```
+
+> Das Skript arbeitet mit einem temporären Git-Worktree. Der Projektordner wird dabei **nicht** umgeschaltet, und `CNAME` (duebi-style.ch) sowie `.nojekyll` bleiben erhalten. Voraussetzung ist PowerShell 7 (`pwsh`). Der aktuelle Arbeitsstand wird automatisch committet.
+
 ---
 
 ## Ordner-Übersicht
@@ -142,6 +172,10 @@ Nach dem Push ist die Website nach wenigen Minuten unter **https://duebi-style.c
 |----------------|--------|
 | `_products/` | Alle Produkte (eine `.md`-Datei pro Produkt) |
 | `assets/img/products/` | Alle Produktfotos |
-| `_data/store.yml` | Laden-Informationen (Adresse, Öffnungszeiten, Telefon, Social Media) |
+| `_data/store.yml` | Laden-Informationen (Adresse, Öffnungszeiten, Telefon, Social Media, rechtliche Angaben) |
 | `assets/css/main.scss` | Design und Farben der Website |
 | `index.html` | Startseite |
+| `impressum.html` | Impressum (Firmenangaben, Adresse, Kontakt) |
+| `agb.html` | Allgemeine Geschäftsbedingungen (AGB) |
+| `versand-zahlung.html` | Versand- und Zahlungsinformationen |
+| `publish.cmd` / `publish.ps1` | Skript zum automatischen Veröffentlichen |

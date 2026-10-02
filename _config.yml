@@ -40,3 +40,5 @@ exclude:
   - vendor
   - instruction.md
   - README.md
+  - publish.ps1
+  - publish.cmd
